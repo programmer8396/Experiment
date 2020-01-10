@@ -168,10 +168,13 @@ class Payment(Technogeeks):
                   Payment.PAYMENTS.append(current_payment)
                 elif last_payment <= 0:
                     print("Congratulations Your Payment is already Completed")
-        else:
+      for values in TRAINER_DETAILS_LIST:
+        if values['id'] == id:
+          
           salary  = int(input("Enter Employee Salary "))
           current_salary = id,salary
           Payment.TRAINER_SALARY.append(current_salary)
+    
 
 
 class Trainers(Technogeeks):
